@@ -13,19 +13,28 @@ const CATEGORIES = [
 ]
 
 const SERVICES = [
-  { id: 1, cat: 'dev',       title: 'Site vitrine Laravel + Tailwind responsive',         provider: 'Amara Kouyaté',  city: 'Abidjan',  price: '25 000', rating: 4.9, reviews: 87,  initials: 'AK', color: '#1A56DB', badge: 'Top vendeur',  badgeType: 'blue'   },
-  { id: 2, cat: 'design',    title: 'Logo professionnel + charte graphique complète',      provider: 'Fatou Diallo',   city: 'Dakar',    price: '15 000', rating: 4.8, reviews: 42,  initials: 'FD', color: '#0E9F6E', badge: 'Vérifié',     badgeType: 'green'  },
-  { id: 3, cat: 'batiment',  title: 'Plomberie, installation sanitaire et réparations',   provider: 'Moussa Bamba',   city: 'Cotonou',  price: '8 000',  rating: 4.6, reviews: 31,  initials: 'MB', color: '#FF5A1F', badge: 'Nouveau',     badgeType: 'orange' },
-  { id: 4, cat: 'marketing', title: 'Gestion réseaux sociaux + création de contenu',      provider: 'Aïcha Traoré',   city: 'Bamako',   price: '20 000', rating: 4.7, reviews: 55,  initials: 'AT', color: '#1A56DB', badge: 'Top vendeur',  badgeType: 'blue'   },
-  { id: 5, cat: 'photo',     title: 'Shooting photo professionnel événementiel',           provider: 'Koffi Mensah',   city: 'Lomé',     price: '35 000', rating: 5.0, reviews: 18,  initials: 'KM', color: '#0E9F6E', badge: 'Vérifié',     badgeType: 'green'  },
-  { id: 6, cat: 'dev',       title: 'Application mobile React Native iOS & Android',      provider: 'Sékou Diaby',    city: 'Abidjan',  price: '80 000', rating: 4.8, reviews: 24,  initials: 'SD', color: '#FF5A1F', badge: 'Premium',     badgeType: 'orange' },
-  { id: 7, cat: 'design',    title: 'Maquette UI/UX Figma pour application mobile',       provider: 'Mariama Bah',    city: 'Conakry',  price: '30 000', rating: 4.9, reviews: 36,  initials: 'MB', color: '#1A56DB', badge: 'Top vendeur',  badgeType: 'blue'   },
-  { id: 8, cat: 'finance',   title: 'Comptabilité PME, bilan et déclaration fiscale',     provider: 'Oumar Sow',      city: 'Dakar',    price: '18 000', rating: 4.5, reviews: 29,  initials: 'OS', color: '#0E9F6E', badge: 'Vérifié',     badgeType: 'green'  },
-  { id: 9, cat: 'marketing', title: 'Rédaction articles blog SEO optimisés',              provider: 'Awa Coulibaly',  city: 'Bamako',   price: '5 000',  rating: 4.7, reviews: 63,  initials: 'AC', color: '#FF5A1F', badge: 'Nouveau',     badgeType: 'orange' },
+  { id: 1, cat: 'dev',       title: 'Site vitrine Laravel + Tailwind responsive',         provider: 'Amara Kouyaté',  city: 'Abidjan',  price: '25 000',     rating: 4.9, reviews: 87,  initials: 'AK', color: '#1A56DB', badge: 'Top vendeur',  badgeType: 'blue'   },
+  { id: 2, cat: 'design',    title: 'Logo professionnel + charte graphique complète',      provider: 'Fatou Diallo',   city: 'Dakar',    price: '15 000',     rating: 4.8, reviews: 42,  initials: 'FD', color: '#0E9F6E', badge: 'Vérifié',     badgeType: 'green'  },
+  { id: 3, cat: 'batiment',  title: 'Plomberie, installation sanitaire et réparations',   provider: 'Moussa Bamba',   city: 'Cotonou',  price: '8 000',      rating: 4.6, reviews: 31,  initials: 'MB', color: '#FF5A1F', badge: 'Nouveau',     badgeType: 'orange' },
+  { id: 4, cat: 'marketing', title: 'Gestion réseaux sociaux + création de contenu',      provider: 'Aïcha Traoré',   city: 'Bamako',   price: '20 000',     rating: 4.7, reviews: 55,  initials: 'AT', color: '#1A56DB', badge: 'Top vendeur',  badgeType: 'blue'   },
+  { id: 5, cat: 'photo',     title: 'Shooting photo professionnel événementiel',           provider: 'Koffi Mensah',   city: 'Lomé',     price: '35 000',     rating: 5.0, reviews: 18,  initials: 'KM', color: '#0E9F6E', badge: 'Vérifié',     badgeType: 'green'  },
+  { id: 6, cat: 'dev',       title: 'Application mobile React Native iOS & Android',      provider: 'Sékou Diaby',    city: 'Abidjan',  price: '80 000',     rating: 4.8, reviews: 24,  initials: 'SD', color: '#FF5A1F', badge: 'Premium',     badgeType: 'orange' },
+  { id: 7, cat: 'design',    title: 'Maquette UI/UX Figma pour application mobile',       provider: 'Mariama Bah',    city: 'Conakry',  price: '30 000',     rating: 4.9, reviews: 36,  initials: 'MB', color: '#1A56DB', badge: 'Top vendeur',  badgeType: 'blue'   },
+  { id: 8, cat: 'finance',   title: 'Comptabilité PME, bilan et déclaration fiscale',     provider: 'Oumar Sow',      city: 'Dakar',    price: '18 000',     rating: 4.5, reviews: 29,  initials: 'OS', color: '#0E9F6E', badge: 'Vérifié',     badgeType: 'green'  },
+  { id: 9, cat: 'marketing', title: 'Rédaction articles blog SEO optimisés',              provider: 'Awa Coulibaly',  city: 'Bamako',   price: '5 000',      rating: 4.7, reviews: 63,  initials: 'AC', color: '#FF5A1F', badge: 'Nouveau',     badgeType: 'orange' },
 ]
 
 const PAYS = ['Tous les pays', 'Bénin', "Côte d'Ivoire", 'Sénégal', 'Togo', 'Mali']
 const TYPES = ['Tous', 'Digitaux', 'Physiques']
+
+const BUDGETS = [
+  { label: 'Tous les budgets', min: 0,         max: Infinity   },
+  { label: '0 — 100 000 XOF',  min: 0,         max: 100000     },
+  { label: '100k — 500k XOF',  min: 100000,    max: 500000     },
+  { label: '500k — 1M XOF',    min: 500000,    max: 1000000    },
+  { label: '1M — 5M XOF',      min: 1000000,   max: 5000000    },
+  { label: '5M — 10M XOF',     min: 5000000,   max: 10000000   },
+]
 
 function Stars({ rating }) {
   return (
@@ -46,25 +55,27 @@ export default function Explorer() {
   const [pays, setPays] = useState('Tous les pays')
   const [type, setType] = useState('Tous')
   const [sort, setSort] = useState('pertinence')
+  const [budget, setBudget] = useState(0)
+
+  const activeBudget = BUDGETS[budget]
 
   const filtered = SERVICES.filter(s => {
     if (activeCat !== 'all' && s.cat !== activeCat) return false
     if (search && !s.title.toLowerCase().includes(search.toLowerCase())) return false
+    const priceNum = parseInt(s.price.replace(/\s/g, ''), 10)
+    if (priceNum < activeBudget.min || priceNum > activeBudget.max) return false
     return true
   })
 
   return (
     <div className="explorer">
 
-      {/* Header */}
       <div className="explorer__header">
         <div>
           <p className="explorer__eyebrow">Marketplace</p>
           <h1 className="explorer__title">Explorer les <em>services</em></h1>
           <p className="explorer__sub">{filtered.length} services disponibles</p>
         </div>
-
-        {/* Search */}
         <div className="explorer__search">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <circle cx="7" cy="7" r="5" stroke="#6B7280" strokeWidth="1.5"/>
@@ -79,7 +90,6 @@ export default function Explorer() {
         </div>
       </div>
 
-      {/* Category tabs */}
       <div className="explorer__tabs">
         {CATEGORIES.map(c => (
           <button
@@ -94,7 +104,6 @@ export default function Explorer() {
 
       <div className="explorer__body">
 
-        {/* Sidebar filters */}
         <aside className="explorer__sidebar">
           <div className="filter-group">
             <h4 className="filter-label">Pays</h4>
@@ -123,18 +132,19 @@ export default function Explorer() {
           </div>
 
           <div className="filter-group">
-            <h4 className="filter-label">Budget (XOF)</h4>
-            <div className="filter-range">
-              <input type="range" min="0" max="100000" step="1000" defaultValue="100000"/>
-              <div className="filter-range-labels">
-                <span>0</span>
-                <span>100 000</span>
-              </div>
-            </div>
+            <h4 className="filter-label">Budget</h4>
+            {BUDGETS.map((b, i) => (
+              <button
+                key={i}
+                className={`filter-option ${budget === i ? 'filter-option--active' : ''}`}
+                onClick={() => setBudget(i)}
+              >
+                {b.label}
+              </button>
+            ))}
           </div>
         </aside>
 
-        {/* Grid */}
         <div className="explorer__main">
           <div className="explorer__toolbar">
             <p className="explorer__count"><strong>{filtered.length}</strong> résultats</p>
@@ -177,6 +187,16 @@ export default function Explorer() {
                 </div>
               </div>
             ))}
+
+            {filtered.length === 0 && (
+              <div className="explorer__empty">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="20" stroke="#E5E7EB" strokeWidth="2"/>
+                  <path d="M16 24h16M24 16v16" stroke="#E5E7EB" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+                <p>Aucun service trouvé pour ce budget</p>
+              </div>
+            )}
           </div>
         </div>
 

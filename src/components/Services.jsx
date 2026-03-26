@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
 import './Services.css'
 
 const SERVICES = [
   {
     id: 1,
+    color: 'blue',
     category: 'Développement web',
     title: 'Site vitrine professionnel Laravel + Tailwind responsive',
     provider: { initials: 'AK', name: 'Amara Kouyaté', city: 'Abidjan, Côte d\'Ivoire', color: '#1A56DB' },
@@ -22,6 +24,7 @@ const SERVICES = [
   },
   {
     id: 2,
+    color: 'green',
     category: 'Design graphique',
     title: 'Logo professionnel + charte graphique complète pour votre marque',
     provider: { initials: 'FD', name: 'Fatou Diallo', city: 'Dakar, Sénégal', color: '#0E9F6E' },
@@ -40,6 +43,7 @@ const SERVICES = [
   },
   {
     id: 3,
+    color: 'orange',
     category: 'Bâtiment & Construction',
     title: 'Travaux de plomberie, installation sanitaire et réparations urgentes',
     provider: { initials: 'MB', name: 'Moussa Bamba', city: 'Cotonou, Bénin', color: '#FF5A1F' },
@@ -81,17 +85,17 @@ export default function Services() {
             Services <em>populaires</em>
           </h2>
         </div>
-        <a href="#" className="see-all">
+        <Link to="/explorer" className="see-all">
           Voir tous les services
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-        </a>
+        </Link>
       </div>
 
       <div className="services__grid">
         {SERVICES.map((s) => (
-          <div className="srv-card" key={s.id}>
+          <div className={`srv-card srv-card--${s.color}`} key={s.id}>
             <div className="srv-card__img" style={{ background: s.gradient }}>
               {s.icon}
               <span className={`srv-card__badge srv-card__badge--${s.badge.type}`}>
