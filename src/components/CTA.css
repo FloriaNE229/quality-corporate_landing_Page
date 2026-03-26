@@ -1,0 +1,124 @@
+.cta {
+  background: var(--white);
+  padding: 100px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: rgba(26, 86, 219, 0.05);
+  filter: blur(80px);
+  top: -150px; right: -100px;
+  pointer-events: none;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  width: 360px; height: 360px;
+  border-radius: 50%;
+  background: rgba(255, 90, 31, 0.06);
+  filter: blur(70px);
+  bottom: -80px; left: -60px;
+  pointer-events: none;
+}
+
+.cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta__eyebrow::before,
+.cta__eyebrow::after {
+  content: '';
+  display: inline-block;
+  width: 20px; height: 1.5px;
+  background: var(--orange);
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.cta__title {
+  font-family: var(--serif);
+  font-size: 58px;
+  letter-spacing: -1.5px;
+  color: var(--dark);
+  line-height: 1.05;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta__title em {
+  font-style: italic;
+  color: var(--blue);
+}
+
+.cta__sub {
+  font-size: 17px;
+  color: var(--gray);
+  margin-bottom: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.cta__btn--primary {
+  background: var(--orange);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(255, 90, 31, 0.3);
+}
+
+.cta__btn--primary:hover {
+  background: #e84d12;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(255, 90, 31, 0.4);
+}
+
+.cta__btn--outline {
+  background: transparent;
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+}
+
+.cta__btn--outline:hover {
+  background: var(--blue-light);
+  transform: translateY(-2px);
+}

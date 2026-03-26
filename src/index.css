@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #1A56DB;
+  --blue-dark: #1342B0;
+  --blue-light: #EEF3FF;
+  --blue-mid: #C7D7FF;
+  --green: #0E9F6E;
+  --green-light: #ECFDF5;
+  --orange: #FF5A1F;
+  --orange-light: #FFF7ED;
+  --dark: #111928;
+  --mid: #374151;
+  --gray: #6B7280;
+  --border: #E5E7EB;
+  --bg: #F9FAFB;
+  --white: #ffffff;
+
+  --sans:  'Bricolage Grotesque', sans-serif;
+  --serif: 'Instrument Serif', serif;
+  --syne:  'Syne', sans-serif;
+  --mono:  'DM Mono', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  color: var(--dark);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--sans); cursor: pointer; border: none; background: none; outline: none; }
+img { display: block; max-width: 100%; }
