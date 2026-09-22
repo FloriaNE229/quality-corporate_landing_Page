@@ -1,5 +1,5 @@
 {
-  "name": "wumo",
+  "name": "quality-corporate",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -10,14 +10,10 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.30.3"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.9",
-    "vite": "^5.4.2"
+    "vite": "^5.4.0"
   }
 }

@@ -1,51 +1,25 @@
-import { Routes, Route } from 'react-router-dom'
-
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import SearchBar from './components/SearchBar'
-import Categories from './components/Categories'
-import HowItWorks from './components/HowItWorks'
-import Services from './components/Services'
-import StatsBand from './components/StatsBand'
-import Testimonials from './components/Testimonials'
-import CTA from './components/CTA'
-import Footer from './components/Footer'
-
-import Login from './auth/Login'
-import Register from './auth/Register'
-import Forgot from './auth/Forgot'
-
-import Explorer from './pages/Explorer'
-import Prestataires from './pages/Prestataires'
-
-function Home() {
-  return (
-    <>
-      <Hero />
-      <SearchBar />
-      <Categories />
-      <HowItWorks />
-      <Services />
-      <StatsBand />
-      <Testimonials />
-      <CTA />
-      <Footer />
-    </>
-  )
-}
+import Header from './components/Header.jsx'
+import Hero from './components/Hero.jsx'
+import About from './components/About.jsx'
+import Services from './components/Services.jsx'
+import Clients from './components/clients.jsx'
+import Presence from './components/Presence.jsx'
+import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/"               element={<Home />} />
-        <Route path="/explorer"       element={<Explorer />} />
-        <Route path="/prestataires"   element={<Prestataires />} />
-        <Route path="/auth/login"     element={<Login />} />
-        <Route path="/auth/register"  element={<Register />} />
-        <Route path="/auth/forgot"    element={<Forgot />} />
-      </Routes>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Clients />
+        <Presence />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }

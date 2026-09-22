@@ -1,62 +1,51 @@
-# Wumo — Landing Page React
+# Quality Corporate — Site vitrine (React + Vite)
 
-Marketplace de services pour l'Afrique de l'Ouest.
-
-## Stack
-
-- **React 18** + **Vite 5**
-- **Bricolage Grotesque** — police sans-serif moderne (titres/corps)
-- **Instrument Serif** — police serif italique (accents visuels)
-- CSS Modules par composant — zéro librairie CSS externe
-- Icônes SVG inline custom — zéro emoji, zéro librairie d'icônes
-
-## Palette
-
-| Token | Valeur | Usage |
-|-------|--------|-------|
-| `--blue` | `#1A56DB` | CTA, liens, navigation |
-| `--green` | `#0E9F6E` | Validation, statuts positifs |
-| `--orange` | `#FF5A1F` | Badges urgents, promotions |
-| `--dark` | `#111928` | Textes principaux, titres |
-| `--gray` | `#6B7280` | Textes secondaires |
-| `--border` | `#E5E7EB` | Bordures |
-| `--bg` | `#F9FAFB` | Fonds de sections alternées |
-
-## Lancement
+## Démarrer le projet
 
 ```bash
 npm install
 npm run dev
 ```
 
-Ouvre [http://localhost:5173](http://localhost:5173)
+Ouvre ensuite l'URL affichée dans le terminal (par défaut http://localhost:5173).
+
+## Build de production
+
+```bash
+npm run build
+```
+
+Les fichiers optimisés sont générés dans `dist/`, prêts à être déposés sur n'importe quel hébergement statique.
 
 ## Structure
 
 ```
 src/
-├── index.css              # Variables CSS globales + reset
-├── main.jsx               # Point d'entrée React
-├── App.jsx                # Assemblage des sections
-└── components/
-    ├── Navbar.jsx / .css
-    ├── Hero.jsx / .css
-    ├── SearchBar.jsx / .css
-    ├── Categories.jsx / .css
-    ├── HowItWorks.jsx / .css
-    ├── Services.jsx / .css
-    ├── StatsBand.jsx / .css
-    ├── Testimonials.jsx / .css
-    ├── CTA.jsx / .css
-    └── Footer.jsx / .css
+  components/
+    Header.jsx    barre de navigation
+    Hero.jsx       section d'accroche
+    About.jsx       présentation de l'entreprise
+    Services.jsx    les 11 domaines d'expertise
+    Presence.jsx    implantations (Bénin, Togo, RDC, Côte d'Ivoire)
+    Contact.jsx     coordonnées + formulaire de contact fonctionnel
+    Footer.jsx
+  App.jsx
+  main.jsx
+  index.css        tout le style du site
 ```
 
-## Pages prévues (suite)
+## Formulaire de contact
 
-- `/services` — Liste avec filtres sidebar
-- `/services/:slug` — Détail d'un service
-- `/prestataires/:username` — Profil prestataire
-- `/register` `/login` — Auth
-- `/dashboard` — Espace client
-- `/pro/dashboard` — Espace prestataire
-- `/pro/wallet` — Wallet & retraits
+Le formulaire (`Contact.jsx`) valide les champs côté client (nom, email, message)
+puis ouvre la messagerie de l'utilisateur avec un email pré-rempli à destination
+de qualitycorporate@qualitycorporate.com — aucun serveur n'est nécessaire.
+
+Pour un envoi silencieux sans ouvrir la messagerie (formulaire → boîte mail
+directement), il faudra brancher un service comme Formspree, EmailJS, ou une
+petite API côté serveur.
+
+## Personnalisation rapide
+
+- Couleurs et polices : variables CSS en haut de `src/index.css` (`--bg`, `--text`, `--accent`, etc.)
+- Textes : directement dans chaque composant sous `src/components/`
+- Domaines d'expertise et implantations : tableaux `SERVICES` et `OFFICES` en haut de `Services.jsx` et `Presence.jsx`
