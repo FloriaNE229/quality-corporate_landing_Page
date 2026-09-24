@@ -206,4 +206,14 @@ footer.site {
   .btn-primary {
     padding: 14px 30px;
   }
+  .cloud {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .pill {
+    font-size: 0.78rem;
+    padding: 10px 8px;
+    text-align: center;
+  }
 }
