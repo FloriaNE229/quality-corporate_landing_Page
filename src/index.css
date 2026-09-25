@@ -235,3 +235,8 @@ footer.site { border-top: 1px solid var(--line); padding: 32px 0; }
 .fade-4 { animation-delay: 0.35s; }
 .fade-5 { animation-delay: 0.45s; }
 .fade-6 { animation-delay: 0.55s; }
+
+.mail-icon, .phone-icon { width: 16px; height: 16px; margin-left: 8px; vertical-align: -2px; }
+.contact-or { color: var(--muted); font-size: 0.92rem; }
+
+a.phone-link, a.nav-cta { color: var(--accent); }
