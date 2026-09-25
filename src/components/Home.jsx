@@ -1,15 +1,20 @@
 const SERVICES = [
-  { title: 'Distribution de produits', desc: 'Matériel informatique, logiciels, équipements de télécommunication et de communication.' },
-  { title: 'Électricité courant faible', desc: 'Câblage informatique cuivre, électricité résidentielle, tertiaire et industrielle.' },
-  { title: 'Froid et climatisation', desc: 'Systèmes de refroidissement, climatisation centralisée, solutions VRV.' },
-  { title: 'Communications unifiées', desc: 'Voix, vidéo, messagerie et outils de collaboration en entreprise.' },
-  { title: 'Réseau & datacenter', desc: "Conception et mise en œuvre d'infrastructures réseau et de datacenters." },
-  { title: 'Énergie & renouvelable', desc: 'Solutions courant fort et énergies renouvelables adaptées au terrain.' },
-  { title: 'Sécurité informatique', desc: 'Cybersécurité et pare-feu nouvelle génération (NGFW).' },
-  { title: 'Infogérance', desc: "Services managés et e-services pour externaliser le pilotage IT." },
-  { title: 'Sécurité électronique', desc: "Vidéosurveillance, détection d'intrusion, contrôle d'accès." },
-  { title: 'Gestion du parcours client', desc: 'Gestion de parking et de file d\'attente.' },
-  { title: 'IA réseau & sécurité', desc: "Intelligence artificielle appliquée à la mise en réseau et à la sécurité." },
+  {
+    title: 'Infrastructure Informatique & Télécom',
+    desc: "Déploiement d'infrastructures réseaux de grande envergure, câblage structuré, fourniture, distribution et leasing de matériels informatiques, mise en place de Data Centers.",
+  },
+  {
+    title: 'Sécurité & Cybersécurité',
+    desc: 'Protection des données, audits de sécurité, lutte contre les cybermenaces et systèmes de personnalisation de titres officiels sécurisés.',
+  },
+  {
+    title: 'Énergie & Électricité',
+    desc: "Solutions énergétiques globales : infrastructures électriques industrielles et déploiement de l'énergie renouvelable (solaire/photovoltaïque).",
+  },
+  {
+    title: 'Sécurité Électronique & Communication unifiée',
+    desc: "Installation de vidéosurveillance (caméras), contrôles d'accès, robotique, systèmes de gestion de présence et outils de communication collaborative d'entreprise.",
+  },
 ]
 
 export default function Home() {
@@ -51,12 +56,7 @@ export default function Home() {
 
       <section id="contact">
         <div className="wrap contact-simple">
-          <a
-            className="phone-link"
-            href="mailto:qualitycorporate@qualitycorporate.com?subject=Contact%20Quality%20Corporate"
-          >
-            Nous contacter
-          </a>
+          <a className="phone-link" href="mailto:qualitycorporate@qualitycorporate.com?subject=Contact%20Quality%20Corporate">Nous contacter</a>
           <a className="phone-link" href="tel:+22921325745">+229 21 32 57 45</a>
         </div>
       </section>
