@@ -153,6 +153,10 @@ h2 { font-family: var(--font-head); font-weight: 500; font-size: clamp(1.5rem, 2
   .service-row:hover { padding-left: 4px; }
 }
 
+.dept + .dept { margin-top: 56px; }
+.dept-title { font-family: var(--font-head); font-weight: 500; font-size: 1.3rem; margin: 0 0 8px; color: var(--accent); }
+.dept-desc { color: var(--muted); margin: 0 0 18px; max-width: 62ch; line-height: 1.6; }
+
 .presence-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .presence-card { background: var(--bg); padding: 28px 24px; transition: background 0.2s var(--ease); }
 .presence-card:hover { background: var(--accent-soft); }
